@@ -178,6 +178,7 @@ header{
         font-size: 20px;
         font-weight: 600;
         border: none;
+        text-align: center;
     }
 
 /*------------------------------------------------*/
@@ -200,6 +201,12 @@ header{
     border: solid 2px var(--dnc-color-blue);
     margin: 10px 0 100px 0;
 }
+    #answer{
+        font-size: 20px;
+        font-weight: 600;
+        text-align: center;
+        margin-top: 25px;
+    }
 
 /*------------------------------------------------*/
 
