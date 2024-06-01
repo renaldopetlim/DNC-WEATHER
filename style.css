@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Inter', sans-serif;
+}
+    body{
+        background-color: #BABABA;
+    }
+        :root{
+            --dnc-color-blue: #0C70F2;
+            --dnc-white: #F2F2F2;
+            --dnc-hover-gray: #BABABA;
+        }
+
+/*------------------------------------------------*/
+
+header{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    background-color: var(--dnc-color-blue);
+    width: 100%;
+    height: 82px;
+}
+    header h1{
+        font-size: 40px;
+        color: var(--dnc-white);
+        margin: 16px 0 0 55px;
+        width: 310px;
+        height: 60px;
+    }
+    #hLinks{
+        text-align: right;
+        margin: 30px 50px 0 0;
+    }
+        #links{
+            color: var(--dnc-white);
+            font-size: 20px;
+            font-weight: 800;
+            text-decoration: none;
+            margin: 0 15px 0 15px;
+            width: 130px;
+            height: 30px;
+        }
+            #links:hover{
+                color: var(--dnc-hover-gray);
+                transition: 0.5s;
+            }
+
+/*------------------------------------------------*/
+
+/*------------------------------------------------*/
+
+footer{
+    background-color: var(--dnc-color-blue);
+    text-align: right;
+    width: 100%;
+    height: 80px;
+    padding: 30px;
+    cursor: pointer;
+}
+    footer a, span{
+        font-size: 20px;
+        font-weight: 800;
+        color: var(--dnc-white);
+        text-decoration: none;
+        margin-right: 20px;
+    }
+        footer a:hover{
+            color: var(--dnc-hover-gray);
+            transition: 0.5s;
+        }

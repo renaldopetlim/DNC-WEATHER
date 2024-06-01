@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DNC Weather</title>
+        <link rel="shortcut icon" href="images/dnc.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>DNC Weather</h1>
+        <div id="hLinks">
+            <a id="links" href="buscaCEP">Endereços</a>
+            <a id="links" href="verPrevisao">Previsão do Tempo</a>
+        </div>
+    </header>
+
+    <main id="container">
+        <article id="info">
+            <div>
+                <h1>Descubra Mais com Precisão:<br>
+                    Previsões do Tempo e Endereços<br>
+                    em Tempo Real</h1>
+            </div>
+            <img src="images/cloud.svg" alt="cloud">
+        </article>
+
+        <section id="formulario">
+            <form id="inputs">
+                <label for="">Primeiro Nome:</label>
+                <input type="text" placeholder="Insira seu primeiro nome:" required>
+
+                <label for="">E-Mail:</label>
+                <input type="text" placeholder="Insira seu e-mail" required>
+
+                <label for="">Digite o Seu CEP:</label>
+                <input id="cep" type="number" placeholder="Insira o CEP" required>
+
+                <label for="">Digite a Latitude e Longitude para Saber a Previsão:</label>
+                    <div id="latLong">
+                        <input id="lat" type="number" placeholder="Latitude" required>
+                        <input id="long" type="number" placeholder="Longitude" required>
+                    </div>
+
+                <button id="botao" type="button">Acessar</button>
+            </form>
+        </section>
+
+        <section class="cepHeader">
+            <h2 id="AncoraCep">Resultado da Busca por CEP:</h2>
+            <img src="images/point-of-map.svg">
+        </section>
+        <section id="cepSection">
+            <p>Logradouro/Nome</p>
+            <p>Bairro/Distrito</p>
+            <p>Localidade/UF</p>
+        </section>
+        <section id="cepSection2">
+            <input id="rua" placeholder="" readonly>
+            <input id="bairro" placeholder="" readonly>
+            <input id="estado" placeholder="" readonly>
+        </section>
+        <section id="previsaoHeader">
+            <h1>Previsão do Tempo na Região:</h1>
+            <img src="images/clouds.svg" alt="">
+        </section>
+        <section id="previsao">
+            <div id="answer"></div>
+        </section>
+    </main>
+
+    <footer>
+        <a class="footer-link" href="https://s3.files.dnc.group/termos/TERMOS+GERAIS+E+CONDI%C3%87%C3%95ES+DE+USO+-+Escola+DNC+5.0.pdf" target="_blank">
+            Termos de Uso
+        </a>
+        <span>|</span>
+        <a class="footer-link" href="https://ed.escoladnc.com.br/politica-privacidade/" target="_blank">
+            Politica de Privacidade
+        </a>
+    </footer>
+
+    <script src="script.js"></script>  
+</body>
+</html>
