@@ -59,11 +59,10 @@ footer{
     background-color: var(--dnc-color-blue);
     text-align: right;
     width: 100%;
-    height: 80px;
+    height: 84px;
     padding: 30px;
-    cursor: pointer;
 }
-    footer a, span{
+    footer a{
         font-size: 20px;
         font-weight: 800;
         color: var(--dnc-white);
@@ -74,3 +73,9 @@ footer{
             color: var(--dnc-hover-gray);
             transition: 0.5s;
         }
+    footer span{
+        font-size: 20px;
+        font-weight: 800;
+        color: var(--dnc-white);
+        margin-right: 15px;
+    }
