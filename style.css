@@ -31,8 +31,6 @@ header{
         font-size: 40px;
         color: var(--dnc-white);
         margin: 16px 0 0 55px;
-        width: 310px;
-        height: 60px;
     }
     #hLinks{
         text-align: right;
@@ -236,24 +234,125 @@ footer{
     }
 
 @media (max-width: 768px) {
+
+    /* HEADER */
     header{
         width: 100%;
         height: 55px;
     }
         header h1{
-            font-size: 22px;
+            display: flex;
+            align-items: center;
+            font-size: 24px;
+            padding-left: 25px;
+            margin: 0;
         }
         #hLinks{
             display: none;
         }
+
+    /* ARTICLE */
     #info{
         display: grid;
         grid-template-columns: 5% 65% 30%;
+        margin-top: 30px;
     }
         #info div h1{
             font-size: 18px;
         }
         #info img{
             width: 80px;
+            margin: auto;
+            display: block;
+        }
+
+    /* FORMULARIO de INPUTS */
+    #formulario{
+        width: 360px;
+        margin-top: 40px;
+    }
+        #inputs label{
+            font-size: 14px;
+        }
+        #inputs input{
+            font-size: 14px;
+        }
+        #inputs button{
+            width: 150px;
+            height: 35px;
+            font-size: 14px;
+            
+        }
+
+    /* BUSCA por CEP */
+    #cepHeader{
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+        #cepHeader h1{
+            font-size: 20px;
+            margin: 0;
+        }
+        #cepHeader img{
+            width: 60px;
+            padding-left: 15px;
+        }
+    #cepSection{
+        width: 95%;
+        height: 40px;
+    }
+        #cepSection p{
+            font-size: 12px;
+            width: 110px;
+            text-align: center;
+        }
+    #cepSection2{
+        width: 95%;
+        height: 40px;
+        margin: 0;
+    }
+        #cepSection2 input{
+            width: 110px;
+            border-radius: 10px;
+            font-size: 12px;
+        }
+
+    /* PREVISÃO do TEMPO */
+    #previsaoHeader{
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+        #previsaoHeader h1{
+            font-size: 20px;
+            margin: 0;
+        }
+        #previsaoHeader img{
+            width: 60px;
+            padding-left: 15px;
+        }
+    #previsao{
+        width: 95%;
+        height: 40px;
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+        #answer{
+            margin-top: 10px;
+        }
+
+    /* FOOTER */
+    footer{
+        height: 60px;
+        padding: 0;
+    }
+        footer a{
+            display: flex;
+            flex-direction: column;
+            font-size: 14px;
+            font-weight: 600;
+            padding-top: 8px;
+        }
+        footer span{
+            display: none;
         }
 }
