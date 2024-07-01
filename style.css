@@ -268,21 +268,31 @@ footer{
 
     /* FORMULARIO de INPUTS */
     #formulario{
-        width: 360px;
-        margin-top: 40px;
+        margin-top: 50px;
+        width: 95%;
     }
-        #inputs label{
-            font-size: 14px;
+        #inputs{
+            margin: 25px 0 25px 0;
         }
-        #inputs input{
-            font-size: 14px;
-        }
-        #inputs button{
-            width: 150px;
-            height: 35px;
-            font-size: 14px;
-            
-        }
+            #inputs label{
+                font-size: 15px;
+                margin-left: 10px;
+                margin-bottom: 10px;
+            }
+            #inputs input{
+                font-size: 12px;
+                width: 100%;
+                padding: 0 10px 0 10px;
+            }
+            #inputs button{
+                font-size: 14px;
+                margin-top: 20px;
+                width: 100%;
+                height: 36px;
+            }
+            #latlong{
+                width: 100%;
+            }
 
     /* BUSCA por CEP */
     #cepHeader{
